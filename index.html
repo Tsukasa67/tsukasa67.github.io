@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vom Coolsten die Website ohhhh yeaaaah</title>
+    <style>
+        /* Keyframes für die Hintergrund-Animation von dunkel auf hell */
+        @keyframes fadeToLight {
+            0% {
+                background-color: #ffffff; /* Anfangszustand: Dunkelblau */
+                opacity: 0; /* Anfangs unsichtbar */
+            }
+            100% {
+                background-color: #ffffff; /* Endzustand: Weiß */
+                opacity: 1; /* Vollständig sichtbar */
+            }
+        }
+
+        /* Gesamtes Body-Element */
+        body {
+            margin: 0;
+            height: 100vh; /* Höhe des Viewports (100% der Bildschirmhöhe) */
+            background-image: url("https://i.ytimg.com/vi/E8Viuz8PPts/maxresdefault.jpg");
+            background-position: center center; /* Bild zentriert */
+            background-repeat: no-repeat;
+            background-size: cover; /* Bild deckt den gesamten Bildschirm ab */
+            font-family: Arial, sans-serif;
+            color: white; /* Weißer Text für bessere Lesbarkeit */
+            display: flex; /* Flexbox-Modus für das Zentrieren des Textes */
+            justify-content: center; /* Horizontales Zentrieren */
+            align-items: center; /* Vertikales Zentrieren */
+            text-align: center; /* Text zentrieren */
+            position: relative; /* Damit wir das Bild und GIF relativ zum Body positionieren können */
+
+            /* Animation: von dunkel zu hell mit Fade-In */
+            animation: fadeToLight 3s ease-in-out forwards;
+        }
+
+        /* Styling für die Überschrift */
+        h1 {
+            font-size: 3em; /* Größere Schriftgröße */
+            margin: 0; /* Entfernt Standardabstand */
+        }
+
+        /* CSS für das Bild oben rechts */
+        .top-right-image {
+            position: absolute; /* Absolut positioniert relativ zum Body */
+            top: 10px; /* Abstand vom oberen Rand */
+            right: 10px; /* Abstand vom rechten Rand */
+            width: 150px; /* Breite des Bildes */
+            height: auto; /* Höhe automatisch im Verhältnis zur Breite */
+        }
+
+        /* CSS für das GIF unten rechts */
+        .bottom-right-gif {
+            position: absolute; /* Absolut positioniert relativ zum Body */
+            bottom: 10px; /* Abstand vom unteren Rand */
+            right: 10px; /* Abstand vom rechten Rand */
+            width: 150px; /* Breite des GIFs */
+            height: auto; /* Höhe automatisch im Verhältnis zur Breite */
+        }
+
+        /* Styling für die Schaltfläche */
+        .redirect-button {
+            margin-top: 20px; /* Abstand vom Text */
+            padding: 15px 30px; /* Polsterung für die Schaltfläche */
+            background-color: #f30707; /* Hellrot für die Schaltfläche */
+            color: white; /* Weißer Text */
+            font-size: 1.2em; /* Größere Schriftgröße */
+            border: none; /* Keine Umrandung */
+            border-radius: 5px; /* Abgerundete Ecken */
+            cursor: pointer; /* Mauszeiger als Zeiger */
+            transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+        }
+
+        /* Hover-Effekt für die Schaltfläche */
+        .redirect-button:hover {
+            background-color: #900909; /* Dunkleres Rot, wenn man mit der Maus darüber fährt */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hallo Duda: Ich bin der Löwe! Ich bin der coolste. Und du nicht.</h1>
+    
+    <!-- Bild oben rechts -->
+    <img src="https://i.etsystatic.com/17775795/r/il/ee6f1a/2265762912/il_fullxfull.2265762912_69pv.jpg" alt="Escanor" class="top-right-image">
+    
+    <!-- GIF unten rechts -->
+    <img src="https://i.makeagif.com/media/4-06-2016/djprDz.gif" alt="Ruffys Punch" class="bottom-right-gif">
+
+    <!-- Schaltfläche für die Weiterleitung -->
+    <button class="redirect-button" onclick="redirectToSite()">Trau dich, ist kein Trojaner hehehe</button>
+
+    <script>
+        // JavaScript Funktion zum Weiterleiten
+        function redirectToSite() {
+            // URL zum Loch hehe
+            window.location.href = "https://m.media-amazon.com/images/I/51L4YusJKnL._AC_UF894,1000_QL80_.jpg";
+        }
+    </script>
+</body>
+</html>
